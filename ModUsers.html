@@ -70,7 +70,7 @@
         console.log(objeto45)
 
 
-     fetch('https://backend-kemel.herokuapp.com/Video', {
+     fetch('http://backend-kemel.herokuapp.com/Video', {
      method: 'POST',
      body: JSON.stringify(objeto45),
      headers:{
@@ -101,7 +101,7 @@
         console.log(objeto46)
 
 
-     fetch('https://backend-kemel.herokuapp.com/Imagen', {
+     fetch('http://backend-kemel.herokuapp.com/Imagen', {
      method: 'POST',
      body: JSON.stringify(objeto46),
      headers:{
@@ -133,7 +133,7 @@
       function userget(){ 
 
             var usuario = sessionStorage.buscar          
-            fetch(`https://backend-kemel.herokuapp.com/Listado/${usuario}`, {
+            fetch(`http://backend-kemel.herokuapp.com/Listado/${usuario}`, {
             method: 'GET',
             headers:{
                 'Content-Type': 'application/json',

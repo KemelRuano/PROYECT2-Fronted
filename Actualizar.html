@@ -58,7 +58,7 @@
 
 
 
-                fetch(`https://backend-kemel.herokuapp.com/Listado/${nombreus}`, {
+                fetch(`http://backend-kemel.herokuapp.com/Listado/${nombreus}`, {
                 method: 'PUT',
                 body: JSON.stringify(objeto2),
                 headers:{
@@ -82,7 +82,7 @@
       function ObtenerDatos(){ 
 
             var usuario = sessionStorage.buscar          
-            fetch(`https://backend-kemel.herokuapp.com/Listado/${usuario}`, {
+            fetch(`http://backend-kemel.herokuapp.com/Listado/${usuario}`, {
             method: 'GET',
             headers:{
                 'Content-Type': 'application/json',
